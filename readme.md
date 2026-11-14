@@ -1,4 +1,4 @@
-<img width="2965" height="1510" alt="Task 1-WHOs Results" src="https://github.com/user-attachments/assets/91ca9b66-b0b9-4c8b-9511-2bdd0a96aeab" />
+<img width="2965" height="1510" alt= />
  <div align="center">
 
 # 🔐 PENETRATION TESTING REPORT
@@ -282,8 +282,6 @@ The SPF record provides information about sources authorised to send email on be
 The DNSSEC query returned no answer. This should be treated as an observation requiring further verification.
 
 **📸 Evidence – DNSRecon results**
-
-![DNSRecon command output](screenshots/6_dnsrecon.png)
 
 ### 🌐 4.2 Network Scanning and Network Discovery – W2-PM5
 
