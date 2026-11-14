@@ -1,3 +1,4 @@
+<img width="2965" height="1510" alt="Task 1-WHOs Results" src="https://github.com/user-attachments/assets/91ca9b66-b0b9-4c8b-9511-2bdd0a96aeab" />
  <div align="center">
 
 # 🔐 PENETRATION TESTING REPORT
@@ -455,16 +456,26 @@ Screenshots and supporting evidence should be stored in the `screenshots/` direc
 
 | No. | Evidence | Filename |
 |---:|---|---|
-| 1 | WHOIS lookup | `1_whois.png` |
-| 2 | WhatWeb results | `2_whatweb.png` |
-| 3 | Nslookup results | `3_nslookup.png` |
-| 4 | cURL response headers | `4_curl.png` |
-| 5 | Wafw00f results | `5_wafw00f.png` |
-| 6 | DNSRecon results | `6_dnsrecon.png` |
-| 7 | Windows network configuration | `7_ipconfig.png` |
-| 8 | Nmap host discovery | `8_nmap.png` |
-| 9 | Zenmap topology | `9_zenmap_topology.png` |
-| 10 | Exported network topology | `10_network_topology.pdf` |
+| 1 | WHOIS lookup |   <img width="2965" height="1510" alt="Task 1-WHOs Results" src="https://github.com/user-attachments/assets/cb7905a8-8159-4116-af67-7c0eaa62133c" />
+   |
+| 2 | WhatWeb results | <img width="2965" height="1495" alt="Task 2-WATWEB Results" src="https://github.com/user-attachments/assets/53110e19-6d56-473b-933c-de0511eef241" />
+ |
+| 3 | Nslookup results |<img width="2972" height="1535" alt="Task 3- nslookup Results" src="https://github.com/user-attachments/assets/5fe7eaad-f05b-4d64-bbe8-83c21d4dbf0c" />
+ |
+| 4 | cURL response headers | <img width="2965" height="1492" alt="Task 4- curl Results" src="https://github.com/user-attachments/assets/b5552f35-36a9-45e0-967d-ec30239f2c62" />
+ |
+| 5 | Wafw00f results | <img width="2962" height="1515" alt="Task 5-WafW00f Results" src="https://github.com/user-attachments/assets/99cfb80d-84d1-45ee-8fdd-287bdc60f288" />
+ |
+| 6 | DNSRecon results | <img width="2972" height="1532" alt="Task 6-dnsrecon Results" src="https://github.com/user-attachments/assets/28d7b572-8973-4384-98aa-2bee8b6f507a" />
+ |
+| 7 | Windows network configuration | <img width="3385" height="1800" alt="Task 02-Find local IP" src="https://github.com/user-attachments/assets/efc209ab-2300-40a5-9494-71019bbf4b96" />
+ |
+| 8 | Nmap host discovery | <img width="2102" height="1687" alt="Task 02-Ping SCan" src="https://github.com/user-attachments/assets/a2f75111-e4de-4ce8-bf7b-46745c751190" />
+ |
+| 9 | Zenmap topology | <img width="3480" height="1980" alt="Task 07 Typology" src="https://github.com/user-attachments/assets/89d0cde0-a5c1-40ec-843b-e35bc86e771e" />
+ |
+| 10 | Exported network topology | [Task 07 Typology.pdf](https://github.com/user-attachments/files/34862710/Task.07.Typology.pdf)
+ |
 
 ---
 
