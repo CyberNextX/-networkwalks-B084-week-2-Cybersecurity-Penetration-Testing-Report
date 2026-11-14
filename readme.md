@@ -6,23 +6,6 @@
 
 **W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
 
-ield	Detail
-Pentester Name (Cybersecurity Professional)	Brian Simpande
-Programme/Batch	B084 – NetworkWalks
-Date	15 November 2026 (or the actual submission date)
-Modules completed	W2-PM1 (Multiple Kali Tools)  
-
- W2-PM5 (Zenmap Scanning)
-Client/Target	1. NetworkWalks  
-
- 2. Own local LAN network
-Permission secured from client?	Confirm and state the accurate permission status. Do not claim written permission unless you have it.
-Phases covered	Phase 1: Reconnaissance and Footprinting  
-
- Phase 2: Scanning and Network Discovery  
-
- Phases 3–5: In Progress
-
 ---
 
 **Week 2 Practical Assessment**
