@@ -302,19 +302,11 @@ I also learned the importance of documenting technical findings accurately, inte
 Finally, the exercises reinforced the importance of conducting reconnaissance and network scanning within an authorised scope.
 
 ---
-📸 8. Evidence Collected
+📸 8. EVIDENCE COLLECTED
 
-<div align="center">
+📂 Evidence directory: screenshots/
 
-📂 Evidence Repository
-
-Screenshots and supporting evidence
-
-All screenshots and supporting documents are stored in the screenshots/ directory of this repository.
-
-</div>
-
-<div style="border: 1px solid #d0d7de; border-radius: 10px; padding: 16px;">
+Screenshots and supporting evidence collected during the practical assessment are organised in the repository's screenshots/ directory.
 
 No.
 
