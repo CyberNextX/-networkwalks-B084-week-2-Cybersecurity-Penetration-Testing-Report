@@ -302,6 +302,87 @@ I also learned the importance of documenting technical findings accurately, inte
 Finally, the exercises reinforced the importance of conducting reconnaissance and network scanning within an authorised scope.
 
 ---
+📸 8. Evidence Collected
+
+<div align="center">
+
+📂 Evidence Repository
+
+Screenshots and supporting evidence
+
+All screenshots and supporting documents are stored in the screenshots/ directory of this repository.
+
+</div>
+
+<div style="border: 1px solid #d0d7de; border-radius: 10px; padding: 16px;">
+
+No.
+
+Evidence
+
+Filename
+
+1
+
+🔎 WHOIS lookup
+
+1_whois.png
+
+2
+
+🛠️ WhatWeb results
+
+2_whatweb.png
+
+3
+
+🌐 Nslookup results
+
+3_nslookup.png
+
+4
+
+📡 cURL response headers
+
+4_curl.png
+
+5
+
+🛡️ Wafw00f results
+
+5_wafw00f.png
+
+6
+
+🗂️ DNSRecon results
+
+6_dnsrecon.png
+
+7
+
+💻 Windows network configuration
+
+7_ipconfig.png
+
+8
+
+🔍 Nmap host discovery
+
+8_nmap.png
+
+9
+
+🖥️ Zenmap topology
+
+9_zenmap_topology.png
+
+10
+
+📄 Exported network topology
+
+10_network_topology.pdf
+
+</div>
 
 <div align="center">
 
