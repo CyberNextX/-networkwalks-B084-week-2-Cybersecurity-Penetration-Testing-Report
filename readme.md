@@ -1,4 +1,3 @@
-<img width="2965" height="1510" alt= />
  <div align="center">
 
 # 🔐 PENETRATION TESTING REPORT
