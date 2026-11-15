@@ -306,8 +306,6 @@ Finally, the exercises reinforced the importance of conducting reconnaissance an
 
 <div align="center">
 
-# 🔐 CYBERSECURITY & ETHICAL HACKING – WEEK 2 REPORT
-
 ### 👨‍💻 Author: Brian Simpande
 
 **NETWORKWALKS | PRACTICAL ACTIVITIES**
