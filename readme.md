@@ -1,14 +1,44 @@
- <div align="center">
+<div align="center">
 
-# 🔐 PENETRATION TESTING REPORT
-
-### Footprinting and Network Scanning Phases
+# 🔐 FOOTPRINTING & NETWORK SCANNING PHASES
 
 **W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
 
----
-
-**Week 2 Practical Assessment**
+</div>
+<table>
+  <tr>
+    <th>FIELD</th>
+    <th>DETAIL</th>
+  </tr>
+  <tr>
+    <td><strong>Pentester Name (Cybersecurity Professional)</strong></td>
+    <td><strong>Brian Simpande</strong></td>
+  </tr>
+  <tr bgcolor="#0969DA">
+    <td><font color="#FFFFFF"><strong>Programme/Batch</strong></font></td>
+    <td><font color="#FFFFFF">B084 – NetworkWalks</font></td>
+  </tr>
+  <tr bgcolor="#0969DA">
+    <td><font color="#FFFFFF"><strong>Date</strong></font></td>
+    <td><font color="#FFFFFF">14 November 2026</font></td>
+  </tr>
+  <tr bgcolor="#0969DA">
+    <td><font color="#FFFFFF"><strong>Modules completed</strong></font></td>
+    <td><font color="#FFFFFF">W2-PM1 (Multiple Kali Tools)<br>W2-PM5 (Zenmap Scanning)</font></td>
+  </tr>
+  <tr bgcolor="#0969DA">
+    <td><font color="#FFFFFF"><strong>Client/Target</strong></font></td>
+    <td><font color="#FFFFFF">1. NetworkWalks<br>2. My own local LAN network</font></td>
+  </tr>
+  <tr bgcolor="#0969DA">
+    <td><font color="#FFFFFF"><strong>Permission secured from client?</strong></font></td>
+    <td><font color="#FFFFFF">[Confirm permission status]</font></td>
+  </tr>
+  <tr bgcolor="#0969DA">
+    <td><font color="#FFFFFF"><strong>Phases covered</strong></font></td>
+    <td><font color="#FFFFFF"><strong>Phase 1:</strong> Reconnaissance &amp; Footprinting<br><strong>Phase 2:</strong> Scanning &amp; Network Discovery<br><strong>Phases 3–5:</strong> In Progress</font></td>
+  </tr>
+</table>
 
 </div>
 
@@ -311,26 +341,51 @@ Screenshots and supporting evidence collected during the practical assessment ar
 
 | **No.** | **Evidence** | **Filename** |
 |:---:|---|---|
-| **1** | 🔎 WHOIS lookup | `1_whois.png` |
-| **2** | 🛠️ WhatWeb results | `2_whatweb.png` |
-| **3** | 🌐 Nslookup results | `3_nslookup.png` |
-| **4** | 📡 cURL response headers | `4_curl.png` |
-| **5** | 🛡️ Wafw00f results | `5_wafw00f.png` |
-| **6** | 🗂️ DNSRecon results | `6_dnsrecon.png` |
-| **7** | 💻 Windows network configuration | `7_ipconfig.png` |
-| **8** | 🔍 Nmap host discovery | `8_nmap.png` |
-| **9** | 🖥️ Zenmap topology | `9_zenmap_topology.png` |
-| **10** | 📄 Exported network topology | `10_network_topology.pdf` |
+| **1** | 🔎 WHOIS lookup | <img width="2965" height="1510" alt="Task 1-WHOs Results" src="https://github.com/user-attachments/assets/fb23881c-8614-4a6b-8a8c-17467ee31340" />
+ |
+| **2** | 🛠️ WhatWeb results | <img width="2965" height="1495" alt="Task 2-WATWEB Results" src="https://github.com/user-attachments/assets/7618d98f-7ee3-4dda-be3f-05daccae3295" />
+ |
+| **3** | 🌐 Nslookup results | <img width="2972" height="1535" alt="Task 3- nslookup Results" src="https://github.com/user-attachments/assets/d1b9f51b-564b-4a0b-b194-7ce1d45f0eaa" />
+ |
+| **4** | 📡 Curl response headers | <img width="2965" height="1492" alt="Task 4- curl Results" src="https://github.com/user-attachments/assets/0cc05843-23f3-4cce-8c52-9c470b1780c6" />
+
+ |
+| **5** | 🛡️ Wafw00f results | <img width="2962" height="1515" alt="Task 5-WafW00f Results" src="https://github.com/user-attachments/assets/ddfa1641-44ba-46b7-b6f2-f6d590eb60fb" />
+ |
+| **6** | 🗂️ DNSRecon results |<img width="2972" height="1532" alt="Task 6-dnsrecon Results" src="https://github.com/user-attachments/assets/57c2fc26-778e-44ad-963b-e60409355c4a" />
+ |
+| **7** | 💻 Windows network configuration | <img width="3385" height="1800" alt="Task 02-Find local IP" src="https://github.com/user-attachments/assets/566c3ad7-da80-476e-ac94-527296f7f2e3" />
+ |
+| **8** | 🔍 Nmap host discovery | <img width="3375" height="1995" alt="Network discovery" src="https://github.com/user-attachments/assets/5d6ed419-04ef-4411-9816-2ce35ed53be0" />
+ |
+| **9** | 🖥️ Zenmap topology | <img width="3480" height="1980" alt="Task 07 Typology" src="https://github.com/user-attachments/assets/6bfb676f-7ced-4f97-a478-d1feb2f9508d" />
+ |
+| **10** | 📄 Exported network topology | [Task 07 Typology.pdf](https://github.com/user-attachments/files/34872621/Task.07.Typology.pdf)
+ |
 </div>
 
 <div align="center">
 
-### 👨‍💻 Author: Brian Simpande
+---
 
-**NETWORKWALKS | PRACTICAL ACTIVITIES**
+## 👨‍💻 Author
 
-</div>
+**Brian Simpande**
 
-*B084 | Cybersecurity and Ethical Hacking | NetworkWalks*
+🔗 **LinkedIn:** [Brian Simpande](https://www.linkedin.com/in/brian-simpande/)
+
+---
+
+## 📋 Project Details
+
+| **Field** | **Details** |
+|---|---|
+| 📌 **Programme** | Cybersecurity and Ethical Hacking – NetworkWalks |
+| 📅 **Week** | 02 |
+| 🔐 **Project** | Footprinting and Network Scanning |
+| 💻 **Platform** | GitHub |
+| 🎓 **Batch** | B084 – NetworkWalks |
+
+---
 
 </div>
