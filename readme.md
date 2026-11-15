@@ -4,13 +4,6 @@
 
 **W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
 
-
-<div align="center">
-
-# 🔐 FOOTPRINTING & NETWORK SCANNING PHASES
-
-**W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
-
 <table width="75%">
   <tr>
     <th align="center">FIELD</th>
