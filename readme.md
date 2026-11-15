@@ -29,360 +29,210 @@
   <img src="https://img.shields.io/badge/%20Brian%20BSC-C00000?style=flat-square" />
 </p>
 
-## ⚖️ 1. Liability Disclaimer
 
-The activities documented in this report were conducted for educational and research purposes as part of the NetworkWalks Cybersecurity and Ethical Hacking training programme.
+**NETWORKWALKS | PRACTICAL ACTIVITIES**
 
-Testing was limited to systems within the authorised training scope and the participant's own local network. The techniques and tools demonstrated in this report must only be used on systems and devices for which appropriate authorisation has been obtained.
+---
 
-Unauthorised access to computer systems and networks may constitute a criminal offence, even where no damage is caused. The author, instructor and training institution are not responsible for the misuse of information contained in this report. The individual conducting any security assessment remains responsible for ensuring that all activities comply with applicable laws and authorisation requirements.
+## ⚠️ Disclaimer
 
-## 📖 2. Introduction
+All activities documented in this report were conducted for educational and research purposes under the NetworkWalks Cybersecurity and Ethical Hacking training programme. Testing was limited to systems I own or had authorisation to assess.
 
-This report documents practical activities undertaken during Week 2 of the Cybersecurity and Ethical Hacking training programme at NetworkWalks.
+Use these tools and techniques responsibly and only with proper authorisation. Unauthorised access is a criminal offence, even where no damage occurs.
+
+The author, instructor and NetworkWalks are not responsible for misuse of this information. All actions remain the sole responsibility of the individual.
+
+---
+
+## 📖 1. Introduction
+
+This report documents practical activities undertaken during Week 2 of the NetworkWalks Cybersecurity and Ethical Hacking training programme.
 
 The exercises covered two main areas:
 
 - **W2-PM1 – Multiple Kali Tools:** Footprinting and reconnaissance of the `networkwalks.com` domain using six Kali Linux tools.
-- **W2-PM5 – Zenmap Scanning:** Network discovery and examination of the participant's local network environment.
+- **W2-PM5 – Zenmap Scanning:** Network discovery and examination of my local network environment.
 
-The exercises demonstrate how information can be gathered from publicly accessible internet services and how active devices can be identified within a local network.
+The exercises demonstrate how publicly available information can be gathered and how active devices can be identified within a local network.
 
-The footprinting activities were conducted using Kali Linux, while Windows network configuration information was examined using the `ipconfig` command. Nmap was used for local network host discovery.
+Each activity documents the commands used, observations, findings and supporting screenshots.
 
-Each activity documents the command used, the observations obtained, the significance of the findings and the supporting evidence where available.
+---
 
-## 🛠️ 3. Tools Used
+## 🎯 2. Project Objectives
 
-The following tools and technologies were used during the practical exercises.
+The main objectives of these practical exercises were to:
+
+- ✅ Perform domain footprinting using multiple Kali Linux tools.
+- ✅ Retrieve publicly available domain registration information.
+- ✅ Identify website technologies and infrastructure.
+- ✅ Perform DNS resolution and enumeration.
+- ✅ Inspect HTTP response headers.
+- ✅ Identify web application firewall technology.
+- ✅ Examine local network configuration.
+- ✅ Discover active devices using Nmap and Zenmap.
+- ✅ Review network scan results and topology.
+- ✅ Document findings and identify potential security risks.
+
+---
+
+## 🛠️ 3. Tools and Technologies Used
 
 | Tool | Purpose |
 |---|---|
-| Kali Linux | Operating system used for footprinting and reconnaissance |
-| WHOIS | Retrieves domain registration and registrar information |
-| WhatWeb | Identifies website technologies and components |
-| Nslookup | Resolves domain names through DNS |
-| cURL | Inspects HTTP response headers |
-| Wafw00f | Detects web application firewall technologies |
-| DNSRecon | Enumerates DNS records and service information |
-| Windows CMD | Displays local network configuration |
-| Nmap | Discovers active hosts on a network |
-| Zenmap | Graphical interface for reviewing Nmap scans and network topology |
+| 🐉 Kali Linux | Penetration testing environment |
+| WHOIS | Domain registration information |
+| WhatWeb | Website technology identification |
+| Nslookup | DNS resolution |
+| Curl | HTTP response header inspection |
+| Wafw00f | Web application firewall detection |
+| DNSRecon | DNS enumeration |
+| Windows `ipconfig` | Local network configuration |
+| Nmap | Network host discovery |
+| Zenmap | Graphical network scanning and visualisation |
 
-## 🔎 4. Activities Performed
+---
 
-### 🌍 4.1 Footprinting and Reconnaissance – W2-PM1
+# 🔎 4. Activities Performed
 
-The first phase involved conducting reconnaissance against the `networkwalks.com` domain using six Kali Linux tools: WHOIS, WhatWeb, Nslookup, cURL, Wafw00f and DNSRecon.
+## 🌍 4.1 Footprinting and Reconnaissance – W2-PM1
+
+I performed reconnaissance on the `networkwalks.com` domain using six Kali Linux tools: **WHOIS, WhatWeb, Nslookup, Curl, Wafw00f and DNSRecon**.
 
 Each tool was used to collect a different category of information about the domain, website technologies, DNS configuration and web security infrastructure.
 
-#### ⚙️ Task 1: WHOIS – Domain Registration Information
+### ⚙️ Task 1: WHOIS – Domain Registration Information
 
-**Objective:** Retrieve publicly available domain registration information, including the registrar, registration dates, name servers and domain status.
+**🎯 Objective:** Retrieve publicly available domain registration information, including the registrar, registration dates, name servers and domain status.
 
-**Command executed:**
+**🔍 Analysis:**
 
-```bash
-whois networkwalks.com
-```
+The WHOIS lookup returned information about the domain's registration and name servers. The registrant's identity was protected through a domain privacy service.
 
-**Observations and findings:**
+The listed domain status restrictions provide certain protections against unauthorised domain changes. The DNSSEC result indicated that the domain was reported as unsigned. This is a configuration observation rather than confirmation of a vulnerability.
 
-| Field | Observation |
-|---|---|
-| Domain name | `networkwalks.com` |
-| Registrar | GoDaddy.com, LLC |
-| Creation date | 6 November 2019 |
-| Updated date | 12 November 2025 |
-| Expiry date | 6 November 2027 |
-| Registrant privacy | Domains By Proxy, LLC |
-| DNSSEC | Reported as unsigned |
-| Domain status | Client-side deletion, renewal, transfer and update restrictions listed |
+### ⚙️ Task 2: WhatWeb – Website Technology Identification
 
-The WHOIS lookup also returned information about the domain's name servers and registrar.
+**🎯 Objective:** Identify technologies, software components and services used by the target website.
 
-**Analysis:**
+**🔍 Analysis:**
 
-The results provided information about the domain's registration history and administrative arrangements. The registrant's identity was protected through a domain privacy service.
-
-The listed domain status restrictions provide certain protections against unauthorised domain changes. The DNSSEC result indicates that the domain was reported as unsigned; this is a configuration observation rather than confirmation of a vulnerability.
-
-**📸 Evidence – WHOIS results**
-
-![WHOIS command output](screenshots/1_whois.png)
-
-#### ⚙️ Task 2: WhatWeb – Website Technology Identification
-
-**Objective:** Identify technologies, software components and services used by the target website.
-
-**Command executed:**
-
-```bash
-whatweb networkwalks.com
-```
-
-**Observations and findings:**
-
-| Component | Result |
-|---|---|
-| Website title | Networkwalks Academy |
-| Web server | Apache |
-| Content management system | WordPress |
-| WordPress version reported | 7.1.4 |
-| Plugin detected | WordPress Download Manager 3.3.76 |
-| JavaScript library | jQuery 3.7.1 |
-| Front-end technology | Bootstrap reported |
-| Google Tag Manager | Detected |
-| HTTP response | `301 Moved Permanently` |
-| HTTPS response | `200 OK` |
-
-**Analysis:**
-
-WhatWeb identified WordPress and other technologies used by the website. This information provides an overview of the website's technology stack and can help a security assessor identify components that may require further review.
+WhatWeb identified WordPress and other technologies used by the website. These findings provided an overview of the website's technology stack and highlighted components that could require further security review.
 
 The initial HTTP request redirected to HTTPS, where the website returned a successful response.
 
-Technology detection does not establish that an identified component is vulnerable. Software versions and component details should be independently verified before drawing security conclusions.
+However, identifying a particular technology or software component does not establish that it is vulnerable.
 
-**📸 Evidence – WhatWeb results**
+### ⚙️ Task 3: Nslookup – DNS Resolution
 
-![WhatWeb command output](screenshots/2_whatweb.png)
+**🎯 Objective:** Resolve the domain name to its corresponding IP address and identify the DNS resolver used.
 
-#### ⚙️ Task 3: Nslookup – DNS Resolution
-
-**Objective:** Resolve the domain name to its corresponding IP address and identify the DNS resolver used.
-
-**Command executed:**
-
-```bash
-nslookup networkwalks.com
-```
-
-**Observations and findings:**
-
-| Field | Result |
-|---|---|
-| DNS resolver | Google Public DNS (`8.8.8.8`) |
-| Response type | Non-authoritative answer |
-| Resolved IPv4 address | `[REDACTED]` |
-
-The resolved IP address matched the address identified during the WhatWeb exercise.
-
-**Analysis:**
+**🔍 Analysis:**
 
 Nslookup successfully resolved the domain name to an IPv4 address.
 
 The non-authoritative response indicates that the answer was supplied by a recursive DNS resolver rather than directly by an authoritative name server.
 
-The matching IP address from the two exercises provided consistency between the observations.
+The resolved IP address was consistent with the address identified during the WhatWeb exercise.
 
-**📸 Evidence – Nslookup results**
+### ⚙️ Task 4: Curl – HTTP Response Header Inspection
 
-![Nslookup command output](screenshots/3_nslookup.png)
+**🎯 Objective:** Inspect the HTTP response headers returned by the website over HTTPS.
 
-#### ⚙️ Task 4: cURL – HTTP Response Header Inspection
-
-**Objective:** Inspect the HTTP response headers returned by the website over HTTPS.
-
-**Command executed:**
-
-```bash
-curl -I https://networkwalks.com
-```
-
-**Observations and findings:**
-
-| Header or response | Observation |
-|---|---|
-| HTTP status | `200 OK` |
-| Web server | Apache |
-| Content type | `text/html; charset=UTF-8` |
-| Referrer policy | `no-referrer-when-downgrade` |
-| Permissions policy | Present |
-| WordPress REST API | References to `/wp-json/` and a pages endpoint |
-| Cookie security | The observed `__wpdm_client` cookie included `Secure` and `HttpOnly` attributes |
-| Cache information | Cache-related headers returned |
-
-**Analysis:**
+**🔍 Analysis:**
 
 The website returned a successful HTTPS response. The cookie attributes observed provide protections against certain types of cookie exposure and client-side access.
 
 The response also exposed references to WordPress REST API endpoints. Their presence alone does not establish a security weakness. The permissions and information available through those endpoints would require separate assessment.
 
-The presence of security-related headers is useful, but does not by itself confirm that the website's security configuration is optimal.
+### ⚙️ Task 5: Wafw00f – Web Application Firewall Detection
 
-**📸 Evidence – cURL response headers**
+**🎯 Objective:** Determine whether a web application firewall could be detected on the target website.
 
-![cURL command output](screenshots/4_curl.png)
+**🔍 Analysis:**
 
-#### ⚙️ Task 5: Wafw00f – Web Application Firewall Detection
-
-**Objective:** Determine whether a web application firewall could be detected on the target website.
-
-**Command executed:**
-
-```bash
-wafw00f networkwalks.com
-```
-
-**Observations and findings:**
-
-| Field | Result |
-|---|---|
-| Tool | Wafw00f |
-| Version | 2.4.2 |
-| Target | `https://networkwalks.com` |
-| Detection result | ModSecurity (SpiderLabs) |
-| Requests made | 2 |
-
-**Analysis:**
-
-Wafw00f identified ModSecurity (SpiderLabs) as the web application firewall associated with the target.
+Wafw00f identified **ModSecurity (SpiderLabs)** as the web application firewall associated with the target.
 
 A web application firewall can help monitor and filter potentially malicious web traffic. However, detecting a WAF does not establish that its rules are correctly configured or that it can prevent all forms of attack.
 
 No WAF bypass attempt was conducted during this exercise.
 
-**📸 Evidence – Wafw00f results**
+### ⚙️ Task 6: DNSRecon – DNS Enumeration
 
-![Wafw00f command output](screenshots/5_wafw00f.png)
+**🎯 Objective:** Enumerate publicly available DNS records associated with the target domain.
 
-#### ⚙️ Task 6: DNSRecon – DNS Enumeration
+**🔍 Analysis:**
 
-**Objective:** Enumerate publicly available DNS records associated with the target domain.
+DNSRecon identified mail-related service records and SPF information.
 
-**Command executed:**
+The results provided further information about the domain's name servers, mail configuration and service discovery records.
 
-```bash
-dnsrecon -d networkwalks.com
-```
+The SPF record provides information about sources authorised to send email on behalf of the domain.
 
-**Observations and findings:**
+---
 
-| DNS information | Observation |
-|---|---|
-| SOA | Start of Authority record identified |
-| NS | Name server records identified |
-| A | IPv4 address record identified |
-| MX | Mail server record identified |
-| TXT | SPF and Google site-verification records found |
-| SRV | Eight autodiscovery service records identified |
-| DNSSEC | Query returned no answer |
-| DNS software | BIND version information reported |
+## 🌐 4.2 Network Scanning and Network Discovery – W2-PM5
 
-DNSRecon also identified mail-related service records and SPF information.
+The second activity involved examining my local network configuration and identifying active devices within the network.
 
-**Analysis:**
+The practical covered local IP address identification, subnet identification, host discovery and graphical review of scan results using Zenmap.
 
-The DNS enumeration provided further information about the domain's name servers, mail configuration and service discovery records.
+### ⚙️ Step 1: Identifying the Local Network Configuration
 
-The SPF record provides information about sources authorised to send email on behalf of the domain. The reported BIND version information may be useful for further assessment, but a version string alone does not confirm that the DNS server is vulnerable.
+**🎯 Objective:** Identify the local computer's IP address, subnet mask and default gateway before performing network discovery.
 
-The DNSSEC query returned no answer. This should be treated as an observation requiring further verification.
+**🔍 Analysis:**
 
-**📸 Evidence – DNSRecon results**
-
-### 🌐 4.2 Network Scanning and Network Discovery – W2-PM5
-
-The second phase involved examining the participant's local network configuration and identifying active devices within the local network.
-
-The practical covered local IP address identification, subnet identification, host discovery and the graphical review of scan results using Zenmap.
-
-#### ⚙️ Step 1: Identifying the Local Network Configuration
-
-**Objective:** Identify the local computer's IP address, subnet mask and default gateway before performing network discovery.
-
-**Command executed on Windows:**
-
-```cmd
-ipconfig
-```
-
-**Observations and findings:**
-
-| Field | Observation |
-|---|---|
-| Network type | Private IPv4 network |
-| Local subnet | `[REDACTED]/24` |
-| Subnet mask | `255.255.255.0` |
-| Local computer IP address | `[REDACTED]` |
-
-**Analysis:**
-
-The Windows network configuration provided the information required to identify the local network range before conducting the Nmap host discovery scan.
+The Windows network configuration provided the information needed to identify the local network range before conducting the Nmap host discovery scan.
 
 The `/24` subnet contains 256 IPv4 addresses, including the network and broadcast addresses.
 
-**📸 Evidence – Windows network configuration**
+### ⚙️ Step 2: Nmap – Local Network Host Discovery
 
-![Windows ipconfig output](screenshots/7_ipconfig.png)
+**🎯 Objective:** Identify active devices within the local network without performing a port scan.
 
-#### ⚙️ Step 2: Nmap – Local Network Host Discovery
-
-**Objective:** Identify active devices within the local network without performing a port scan.
-
-**Command executed:**
-
-```bash
-nmap -sn [REDACTED]/24
-```
-
-**Observations and findings:**
-
-| Field | Result |
-|---|---|
-| Scan type | Host discovery (`-sn`) |
-| IP addresses examined | 256 |
-| Active hosts identified | 3 |
-| Scan duration | Approximately 2.93 seconds |
-
-The scan identified three active hosts, including the local gateway, another network device and the scanning computer.
-
-Individual IP addresses, MAC addresses and hostnames have been redacted in this public report.
-
-**Analysis:**
+**🔍 Analysis:**
 
 The Nmap scan demonstrated how host discovery can be used to identify active devices within a specified network range.
 
-The `-sn` option performs host discovery without conducting a port scan. The three detected hosts indicate that three devices responded to the discovery probes used during the exercise.
+The `-sn` option performs host discovery without conducting a port scan.
+
+The scan identified three active hosts within the examined network range. These devices responded to the discovery probes used during the exercise.
 
 The scan did not establish the operating systems, open ports or vulnerabilities of the discovered devices. Those would require separate authorised assessment activities.
 
-**📸 Evidence – Nmap host discovery**
+### ⚙️ Step 3: Zenmap – Network Scan Visualisation
 
-![Nmap command output](screenshots/8_nmap.png)
+**🎯 Objective:** Review network scan results using Zenmap, the graphical interface for Nmap, and generate a network topology as required by the practical.
 
-#### ⚙️ Step 3: Zenmap – Network Scan Visualisation
+**🔍 Analysis:**
 
-**Objective:** Review network scan results using Zenmap, the graphical interface for Nmap, and generate a network topology where required by the practical.
+Zenmap provides a graphical interface for reviewing Nmap scan results, making it easier to examine discovered hosts and their relationships within the scanned network.
 
-The Zenmap stage is intended to provide a graphical representation of discovered hosts and their relationship within the scanned network.
+The Topology section provides a visual representation of the network discovery results, helping to present the findings in a clear and organised format.
 
-**Evidence status:** Add the Zenmap scan screenshot and exported topology after completing and verifying this stage.
+---
 
-**📸 Evidence – Zenmap topology**
-
-![Zenmap topology screenshot](screenshots/9_zenmap_topology.png)
-
-**Optional exported topology file:**
-
-`screenshots/10_network_topology.pdf`
-
-## ⚠️ 5. Risk Analysis and Impact
+# ⚠️ 5. Risk Analysis and Impact
 
 Based on the observations collected during footprinting and network discovery, the following potential security considerations were identified.
 
-| No. | Risk / Finding | Evidence / Observation | Potential Impact | Indicative Risk |
-|---:|---|---|---|---|
-| 1 | Website technology information exposed | WhatWeb identified WordPress and a plugin | May assist further technology fingerprinting and software research | Medium |
-| 2 | Domain IP address identifiable | Nslookup resolved the domain to an IPv4 address | Provides information about the hosting infrastructure | Low |
-| 3 | HTTP technical information exposed | cURL returned response headers and REST API references | May assist further enumeration | Low |
-| 4 | WAF technology identifiable | Wafw00f detected ModSecurity | Reveals information about the web security architecture | Low |
-| 5 | DNS infrastructure information exposed | DNSRecon identified DNS, mail and service records | May help build a broader infrastructure profile | Medium |
-| 6 | Multiple active local hosts identified | Nmap discovered three active hosts | Unrecognised devices may require investigation | Medium |
+| No. | Risk / Finding | Evidence / Observation | Potential Impact | Risk Level |
+|---|---|---|---|---|
+| 1 | Website technology information exposed | WhatWeb identified WordPress and a plugin | May assist further technology fingerprinting and software research | 🟠 Medium |
+| 2 | Domain IP address identifiable | Nslookup resolved the domain to an IPv4 address | Provides information about the hosting infrastructure | 🟢 Low |
+| 3 | HTTP technical information exposed | Curl returned response headers and REST API references | May assist further enumeration | 🟢 Low |
+| 4 | WAF technology identifiable | Wafw00f detected ModSecurity | Reveals information about the web security architecture | 🟢 Low |
+| 5 | DNS infrastructure information exposed | DNSRecon identified DNS, mail and service records | May help build a broader infrastructure profile | 🟠 Medium |
+| 6 | Multiple active local hosts identified | Nmap discovered three active hosts | Unrecognised devices may require investigation | 🟠 Medium |
 
-**Risk level key:** Low – limited observed exposure; Medium – warrants further review.
+**Risk level key:**
+
+- 🟢 **Low:** Limited observed exposure.
+- 🟠 **Medium:** Warrants further review.
+- 🔴 **High/Critical:** Requires urgent assessment where confirmed.
+
+### 📌 Risk Assessment Notes
 
 The risk levels above are indicative assessments of potential exposure, not confirmed vulnerability ratings.
 
@@ -390,55 +240,59 @@ The practical exercises primarily involved information gathering and host discov
 
 The presence of information such as a software version, IP address, DNS record or WAF technology does not by itself mean that a system is vulnerable. Further authorised security testing would be required to establish whether an actual vulnerability exists.
 
-## 🛡️ 6. Recommendations
+---
+
+# 🛡️ 6. Recommendations
 
 Based on the observations from the practical exercises, the following security improvements are recommended.
 
-1. **Review publicly exposed technology information**
+**1. 🔍 Review publicly exposed technology information**
 
-   Organisations should regularly review the information publicly visible about their web technologies, content management systems and plugins.
+Organisations should regularly review the information publicly visible about their web technologies, content management systems and plugins.
 
-2. **Keep software updated**
+**2. 🔄 Keep software updated**
 
-   Content management systems, plugins and other web technologies should be updated regularly and checked against relevant security advisories.
+Content management systems, plugins and other web technologies should be updated regularly and checked against relevant security advisories.
 
-3. **Review HTTP response headers**
+**3. 🔐 Review HTTP response headers**
 
-   HTTP response headers should be assessed to determine whether unnecessary technical information is exposed and whether appropriate security policies are configured.
+HTTP response headers should be assessed to determine whether unnecessary technical information is exposed and whether appropriate security policies are configured.
 
-4. **Review DNS records regularly**
+**4. 🌐 Review DNS records regularly**
 
-   DNS records should be checked periodically to ensure that only required information and services are publicly exposed.
+DNS records should be checked periodically to ensure that only required information and services are publicly exposed.
 
-5. **Review DNSSEC configuration**
+**5. 🛡️ Review DNSSEC configuration**
 
-   Where appropriate, organisations should assess the implementation of DNSSEC to support DNS response authenticity.
+Where appropriate, organisations should assess the implementation of DNSSEC to support DNS response authenticity.
 
-6. **Properly configure and monitor the WAF**
+**6. 🔥 Properly configure and monitor the WAF**
 
-   ModSecurity rules should be reviewed, maintained and monitored to ensure that the web application firewall is appropriately configured.
+ModSecurity rules should be reviewed, maintained and monitored to ensure that the web application firewall is appropriately configured.
 
-7. **Perform regular internal network discovery**
+**7. 📡 Perform regular internal network discovery**
 
-   Organisations should periodically scan their own networks to identify active devices and maintain an accurate network inventory.
+Organisations should periodically scan their own networks to identify active devices and maintain an accurate network inventory.
 
-8. **Investigate unknown devices**
+**8. 💻 Investigate unknown devices**
 
-   Unexpected devices discovered during network scanning should be investigated and verified.
+Unexpected devices discovered during network scanning should be investigated and verified.
 
-9. **Maintain network documentation**
+**9. 🗺️ Maintain network documentation**
 
-   Network topology and device information should be documented and updated regularly.
+Network topology and device information should be documented and updated regularly.
 
-10. **Conduct security testing with authorisation**
+**10. ⚖️ Conduct security testing with authorisation**
 
-    Reconnaissance and scanning should only be performed against systems and networks where appropriate authorisation has been obtained.
+Reconnaissance and scanning should only be performed against systems and networks where appropriate authorisation has been obtained.
 
-## 🎯 7. Conclusion
+---
 
-During Week 2 of the Cybersecurity and Ethical Hacking training programme, I undertook practical activities covering footprinting, reconnaissance and network discovery.
+# 🎯 7. Conclusion
 
-In the footprinting activity, I used six Kali Linux tools to collect information about the target domain. WHOIS provided domain registration information, WhatWeb identified website technologies, Nslookup resolved the domain name, cURL inspected HTTP response headers, Wafw00f detected a web application firewall, and DNSRecon provided additional DNS information.
+During Week 2 of the NetworkWalks Cybersecurity and Ethical Hacking training programme, I completed practical activities covering footprinting, reconnaissance and network discovery.
+
+In the footprinting activity, I used six Kali Linux tools to collect information about the target domain. WHOIS provided domain registration information, WhatWeb identified website technologies, Nslookup resolved the domain name, Curl inspected HTTP response headers, Wafw00f detected a web application firewall, and DNSRecon provided additional DNS information.
 
 In the network discovery activity, I used Windows `ipconfig` to examine the local network configuration and Nmap to identify active hosts. The scan examined 256 IP addresses and identified three active hosts.
 
@@ -448,40 +302,17 @@ I also learned the importance of documenting technical findings accurately, inte
 
 Finally, the exercises reinforced the importance of conducting reconnaissance and network scanning within an authorised scope.
 
-## 📸 8. Evidence Collected
-
-Screenshots and supporting evidence should be stored in the `screenshots/` directory of this repository.
-
-| No. | Evidence | Filename |
-|---:|---|---|
-| 1 | WHOIS lookup |   <img width="2965" height="1510" alt="Task 1-WHOs Results" src="https://github.com/user-attachments/assets/cb7905a8-8159-4116-af67-7c0eaa62133c" />
-   |
-| 2 | WhatWeb results | <img width="2965" height="1495" alt="Task 2-WATWEB Results" src="https://github.com/user-attachments/assets/53110e19-6d56-473b-933c-de0511eef241" />
- |
-| 3 | Nslookup results |<img width="2972" height="1535" alt="Task 3- nslookup Results" src="https://github.com/user-attachments/assets/5fe7eaad-f05b-4d64-bbe8-83c21d4dbf0c" />
- |
-| 4 | cURL response headers | <img width="2965" height="1492" alt="Task 4- curl Results" src="https://github.com/user-attachments/assets/b5552f35-36a9-45e0-967d-ec30239f2c62" />
- |
-| 5 | Wafw00f results | <img width="2962" height="1515" alt="Task 5-WafW00f Results" src="https://github.com/user-attachments/assets/99cfb80d-84d1-45ee-8fdd-287bdc60f288" />
- |
-| 6 | DNSRecon results | <img width="2972" height="1532" alt="Task 6-dnsrecon Results" src="https://github.com/user-attachments/assets/28d7b572-8973-4384-98aa-2bee8b6f507a" />
- |
-| 7 | Windows network configuration | <img width="3385" height="1800" alt="Task 02-Find local IP" src="https://github.com/user-attachments/assets/efc209ab-2300-40a5-9494-71019bbf4b96" />
- |
-| 8 | Nmap host discovery | <img width="2102" height="1687" alt="Task 02-Ping SCan" src="https://github.com/user-attachments/assets/a2f75111-e4de-4ce8-bf7b-46745c751190" />
- |
-| 9 | Zenmap topology | <img width="3480" height="1980" alt="Task 07 Typology" src="https://github.com/user-attachments/assets/89d0cde0-a5c1-40ec-843b-e35bc86e771e" />
- |
-| 10 | Exported network topology | [Task 07 Typology.pdf](https://github.com/user-attachments/files/34862710/Task.07.Typology.pdf)
- |
-
 ---
 
 <div align="center">
 
-**— END OF REPORT —**
+# 🔐 CYBERSECURITY & ETHICAL HACKING – WEEK 2 REPORT
 
-**BRIAN SIMPANDE**
+### 👨‍💻 Author: Brian Simpande
+
+**NETWORKWALKS | PRACTICAL ACTIVITIES**
+
+</div>
 
 *B084 | Cybersecurity and Ethical Hacking | NetworkWalks*
 
