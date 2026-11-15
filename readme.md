@@ -302,78 +302,25 @@ I also learned the importance of documenting technical findings accurately, inte
 Finally, the exercises reinforced the importance of conducting reconnaissance and network scanning within an authorised scope.
 
 ---
-📸 8. EVIDENCE COLLECTED
 
-📂 Evidence directory: screenshots/
+## 📸 8. EVIDENCE COLLECTED
 
-Screenshots and supporting evidence collected during the practical assessment are organised in the repository's screenshots/ directory.
+📂 **Evidence directory:** `screenshots/`
 
-No.
+Screenshots and supporting evidence collected during the practical assessment are organised in the repository's `screenshots/` directory.
 
-Evidence
-
-Filename
-
-1
-
-🔎 WHOIS lookup
-
-1_whois.png
-
-2
-
-🛠️ WhatWeb results
-
-2_whatweb.png
-
-3
-
-🌐 Nslookup results
-
-3_nslookup.png
-
-4
-
-📡 cURL response headers
-
-4_curl.png
-
-5
-
-🛡️ Wafw00f results
-
-5_wafw00f.png
-
-6
-
-🗂️ DNSRecon results
-
-6_dnsrecon.png
-
-7
-
-💻 Windows network configuration
-
-7_ipconfig.png
-
-8
-
-🔍 Nmap host discovery
-
-8_nmap.png
-
-9
-
-🖥️ Zenmap topology
-
-9_zenmap_topology.png
-
-10
-
-📄 Exported network topology
-
-10_network_topology.pdf
-
+| **No.** | **Evidence** | **Filename** |
+|:---:|---|---|
+| **1** | 🔎 WHOIS lookup | `1_whois.png` |
+| **2** | 🛠️ WhatWeb results | `2_whatweb.png` |
+| **3** | 🌐 Nslookup results | `3_nslookup.png` |
+| **4** | 📡 cURL response headers | `4_curl.png` |
+| **5** | 🛡️ Wafw00f results | `5_wafw00f.png` |
+| **6** | 🗂️ DNSRecon results | `6_dnsrecon.png` |
+| **7** | 💻 Windows network configuration | `7_ipconfig.png` |
+| **8** | 🔍 Nmap host discovery | `8_nmap.png` |
+| **9** | 🖥️ Zenmap topology | `9_zenmap_topology.png` |
+| **10** | 📄 Exported network topology | `10_network_topology.pdf` |
 </div>
 
 <div align="center">
