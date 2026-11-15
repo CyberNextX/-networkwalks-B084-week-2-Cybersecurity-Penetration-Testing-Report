@@ -1,8 +1,13 @@
+
 <div align="center">
 
-# 🔐 FOOTPRINTING & NETWORK SCANNING PHASES
+# 🔐 PENETRATION TESTING REPORT
+
+## FOOTPRINTING & NETWORK SCANNING PHASES
 
 **W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
+---
+</div>
 
 <table width="75%">
   <tr>
@@ -339,25 +344,35 @@ Screenshots and supporting evidence collected during the practical assessment ar
 
 | **No.** | **Evidence** | **Filename** |
 |:---:|---|---|
+
 | **1** | 🔎 WHOIS lookup | <img width="2965" height="1510" alt="Task 1-WHOs Results" src="https://github.com/user-attachments/assets/fb23881c-8614-4a6b-8a8c-17467ee31340" />
  |
+
 | **2** | 🛠️ WhatWeb results | <img width="2965" height="1495" alt="Task 2-WATWEB Results" src="https://github.com/user-attachments/assets/7618d98f-7ee3-4dda-be3f-05daccae3295" />
  |
+
 | **3** | 🌐 Nslookup results | <img width="2972" height="1535" alt="Task 3- nslookup Results" src="https://github.com/user-attachments/assets/d1b9f51b-564b-4a0b-b194-7ce1d45f0eaa" />
  |
+
 | **4** | 📡 Curl response headers | <img width="2965" height="1492" alt="Task 4- curl Results" src="https://github.com/user-attachments/assets/0cc05843-23f3-4cce-8c52-9c470b1780c6" />
 
  |
+
 | **5** | 🛡️ Wafw00f results | <img width="2962" height="1515" alt="Task 5-WafW00f Results" src="https://github.com/user-attachments/assets/ddfa1641-44ba-46b7-b6f2-f6d590eb60fb" />
  |
+
 | **6** | 🗂️ DNSRecon results |<img width="2972" height="1532" alt="Task 6-dnsrecon Results" src="https://github.com/user-attachments/assets/57c2fc26-778e-44ad-963b-e60409355c4a" />
  |
+
 | **7** | 💻 Windows network configuration | <img width="3385" height="1800" alt="Task 02-Find local IP" src="https://github.com/user-attachments/assets/566c3ad7-da80-476e-ac94-527296f7f2e3" />
  |
+
 | **8** | 🔍 Nmap host discovery | <img width="3375" height="1995" alt="Network discovery" src="https://github.com/user-attachments/assets/5d6ed419-04ef-4411-9816-2ce35ed53be0" />
  |
+
 | **9** | 🖥️ Zenmap topology | <img width="3480" height="1980" alt="Task 07 Typology" src="https://github.com/user-attachments/assets/6bfb676f-7ced-4f97-a478-d1feb2f9508d" />
  |
+
 | **10** | 📄 Exported network topology | [Task 07 Typology.pdf](https://github.com/user-attachments/files/34872621/Task.07.Typology.pdf)
  |
 </div>
