@@ -6,7 +6,7 @@
 
 **🎯 W2-PM-FINAL** &nbsp; | &nbsp; **🛡️ CYBERSECURITY** &nbsp; | &nbsp; **🎓 NETWORKWALKS**
 
----
+---------------------------------------------------------------------------------------------
 
 </div>
 
@@ -39,7 +39,7 @@
 </tr>
 <tr bgcolor="#0969DA">
 <td><strong><font color="#FFFFFF">Permission secured from client?</font></strong></td>
-<td><font color="#FFFFFF">[Confirm permission status]</font></td>
+<td><font color="#FFFFFF">Yes</font></td>
 </tr>
 <tr bgcolor="#0969DA">
 <td><strong><font color="#FFFFFF">Phases covered</font></strong></td>
