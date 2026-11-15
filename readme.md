@@ -4,44 +4,49 @@
 
 **W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
 
-</div>
-<table>
+
+<div align="center">
+
+# 🔐 FOOTPRINTING & NETWORK SCANNING PHASES
+
+**W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
+
+<table width="75%">
   <tr>
-    <th>FIELD</th>
-    <th>DETAIL</th>
+    <th align="center">FIELD</th>
+    <th align="center">DETAIL</th>
   </tr>
   <tr>
-    <td><strong>Pentester Name (Cybersecurity Professional)</strong></td>
+    <td><strong>Pentester Name</strong><br/>(Cybersecurity Professional)</td>
     <td><strong>Brian Simpande</strong></td>
   </tr>
   <tr bgcolor="#0969DA">
-    <td><font color="#FFFFFF"><strong>Programme/Batch</strong></font></td>
-    <td><font color="#FFFFFF">B084 – NetworkWalks</font></td>
+    <td><font color="white"><strong>Programme/Batch</strong></font></td>
+    <td><font color="white">B084 – NetworkWalks</font></td>
   </tr>
   <tr bgcolor="#0969DA">
-    <td><font color="#FFFFFF"><strong>Date</strong></font></td>
-    <td><font color="#FFFFFF">14 November 2026</font></td>
+    <td><font color="white"><strong>Date</strong></font></td>
+    <td><font color="white">14 November 2026</font></td>
   </tr>
   <tr bgcolor="#0969DA">
-    <td><font color="#FFFFFF"><strong>Modules completed</strong></font></td>
-    <td><font color="#FFFFFF">W2-PM1 (Multiple Kali Tools)<br>W2-PM5 (Zenmap Scanning)</font></td>
+    <td><font color="white"><strong>Modules completed</strong></font></td>
+    <td><font color="white">W2-PM1 (Multiple Kali Tools)<br/>W2-PM5 (Zenmap Scanning)</font></td>
   </tr>
   <tr bgcolor="#0969DA">
-    <td><font color="#FFFFFF"><strong>Client/Target</strong></font></td>
-    <td><font color="#FFFFFF">1. NetworkWalks<br>2. My own local LAN network</font></td>
+    <td><font color="white"><strong>Client/Target</strong></font></td>
+    <td><font color="white">1. NetworkWalks<br/>2. My own local LAN network</font></td>
   </tr>
   <tr bgcolor="#0969DA">
-    <td><font color="#FFFFFF"><strong>Permission secured from client?</strong></font></td>
-    <td><font color="#FFFFFF">[Confirm permission status]</font></td>
+    <td><font color="white"><strong>Permission secured from client?</strong></font></td>
+    <td><font color="white">Yes</font></td>
   </tr>
   <tr bgcolor="#0969DA">
-    <td><font color="#FFFFFF"><strong>Phases covered</strong></font></td>
-    <td><font color="#FFFFFF"><strong>Phase 1:</strong> Reconnaissance &amp; Footprinting<br><strong>Phase 2:</strong> Scanning &amp; Network Discovery<br><strong>Phases 3–5:</strong> In Progress</font></td>
+    <td><font color="white"><strong>Phases covered</strong></font></td>
+    <td><font color="white"><strong>Phase 1:</strong> Reconnaissance &amp; Footprinting<br/><strong>Phase 2:</strong> Scanning &amp; Network Discovery<br/><strong>Phases 3–5:</strong> In Progress</font></td>
   </tr>
 </table>
 
 </div>
-
 ---
 <p align="center">
   <img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
