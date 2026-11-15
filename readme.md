@@ -1,47 +1,51 @@
-
+---
 <div align="center">
 
 # 🔐 PENETRATION TESTING REPORT
 
-## FOOTPRINTING & NETWORK SCANNING PHASES
+### 🌐 FOOTPRINTING & NETWORK SCANNING PHASES
 
-**W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
----
+**🎯 W2-PM-FINAL** &nbsp; | &nbsp; **🛡️ CYBERSECURITY** &nbsp; | &nbsp; **🎓 NETWORKWALKS**
+
 </div>
 
-<table width="75%">
-  <tr>
-    <th align="center">FIELD</th>
-    <th align="center">DETAIL</th>
-  </tr>
-  <tr>
-    <td><strong>Pentester Name</strong><br/>(Cybersecurity Professional)</td>
-    <td><strong>Brian Simpande</strong></td>
-  </tr>
-  <tr bgcolor="#0969DA">
-    <td><font color="white"><strong>Programme/Batch</strong></font></td>
-    <td><font color="white">B084 – NetworkWalks</font></td>
-  </tr>
-  <tr bgcolor="#0969DA">
-    <td><font color="white"><strong>Date</strong></font></td>
-    <td><font color="white">14 November 2026</font></td>
-  </tr>
-  <tr bgcolor="#0969DA">
-    <td><font color="white"><strong>Modules completed</strong></font></td>
-    <td><font color="white">W2-PM1 (Multiple Kali Tools)<br/>W2-PM5 (Zenmap Scanning)</font></td>
-  </tr>
-  <tr bgcolor="#0969DA">
-    <td><font color="white"><strong>Client/Target</strong></font></td>
-    <td><font color="white">1. NetworkWalks<br/>2. My own local LAN network</font></td>
-  </tr>
-  <tr bgcolor="#0969DA">
-    <td><font color="white"><strong>Permission secured from client?</strong></font></td>
-    <td><font color="white">Yes</font></td>
-  </tr>
-  <tr bgcolor="#0969DA">
-    <td><font color="white"><strong>Phases covered</strong></font></td>
-    <td><font color="white"><strong>Phase 1:</strong> Reconnaissance &amp; Footprinting<br/><strong>Phase 2:</strong> Scanning &amp; Network Discovery<br/><strong>Phases 3–5:</strong> In Progress</font></td>
-  </tr>
+---
+
+<br/>
+
+<table width="75%" align="center" border="1" cellpadding="12" cellspacing="0">
+<tr>
+<th width="40%" align="center">FIELD</th>
+<th width="60%" align="center">DETAIL</th>
+</tr>
+<tr>
+<td><strong>Pentester Name</strong><br/>(Cybersecurity Professional)</td>
+<td><strong>Brian Simpande</strong></td>
+</tr>
+<tr bgcolor="#0969DA">
+<td><strong><font color="#FFFFFF">Programme/Batch</font></strong></td>
+<td><font color="#FFFFFF">B084 – NetworkWalks</font></td>
+</tr>
+<tr bgcolor="#0969DA">
+<td><strong><font color="#FFFFFF">Date</font></strong></td>
+<td><font color="#FFFFFF">14 November 2026</font></td>
+</tr>
+<tr bgcolor="#0969DA">
+<td><strong><font color="#FFFFFF">Modules completed</font></strong></td>
+<td><font color="#FFFFFF">W2-PM1 (Multiple Kali Tools)<br/>W2-PM5 (Zenmap Scanning)</font></td>
+</tr>
+<tr bgcolor="#0969DA">
+<td><strong><font color="#FFFFFF">Client/Target</font></strong></td>
+<td><font color="#FFFFFF">1. NetworkWalks<br/>2. My own local LAN network</font></td>
+</tr>
+<tr bgcolor="#0969DA">
+<td><strong><font color="#FFFFFF">Permission secured from client?</font></strong></td>
+<td><font color="#FFFFFF">[Confirm permission status]</font></td>
+</tr>
+<tr bgcolor="#0969DA">
+<td><strong><font color="#FFFFFF">Phases covered</font></strong></td>
+<td><font color="#FFFFFF"><strong>Phase 1:</strong> Reconnaissance &amp; Footprinting<br/><strong>Phase 2:</strong> Scanning &amp; Network Discovery<br/><strong>Phases 3–5:</strong> In Progress</font></td>
+</tr>
 </table>
 
 </div>
